@@ -1,218 +1,219 @@
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-	margin:0;
-	padding:0;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color:#f1f1f1;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
 }
-div{
-	margin:0;
-	padding:0;
+div {
+  margin: 0;
+  padding: 0;
 }
-h1{
-    font-size:28px;
-	font-weight:500;
+h1 {
+  font-size: 28px;
+  font-weight: 500;
 }
-h2{
-	font-size:18px;
-	margin:20px 0;
-	opacity:0.6;
+h2 {
+  font-size: 18px;
+  margin: 20px 0;
+  opacity: 0.6;
 }
-h3{
-	font-size:18px;
+h3 {
+  font-size: 18px;
 }
- h5{
-	font-size:16px;
-	margin:0;
-	font-weight:400;
-	color:#009688;
-}
-
-hr{
-	border:0;
-	border-top:1px solid #eee;
-	margin:15px 0;
-	}
-.content{
-	margin:0 170px;
-	
+h5 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+  color: #009688;
 }
 
-.row{
-	display:flex;
-	flex-direction:row;
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
 }
-@media only screen and (max-width: 900px){
-	.content{
-		margin:0;
-	}
-	
+.content {
+  margin: 0 170px;
 }
 
-
-@media only screen and (max-width: 1200px){
-	.content{
-		margin:0;
-	}
-
+.row {
+  display: flex;
+  flex-direction: row;
 }
-.row p{
-	opacity:0.7;
-}
-.main{
-	flex:65%;
-	margin:15px 0 15px 8px;
-	background-color:#f1f1f1;
-
+@media only screen and (max-width: 900px) {
+  .content {
+    margin: 0;
+  }
 }
 
-.aside{
-	flex:32%;
-	margin:15px 8px 15px 0;
-	background-color:white;
-	box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+@media only screen and (max-width: 1200px) {
+  .content {
+    margin: 0;
+  }
 }
-.aside img{
-	max-width:100%;
-	max-height:100%;
+.row p {
+  opacity: 0.7;
 }
-.extra-padding{
-	padding:5px 20px;
-	background-color:white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 5px rgba(0, 0, 0, 0.19);
+.main {
+  flex: 65%;
+  margin: 15px 0 15px 8px;
+  background-color: #f1f1f1;
 }
-.extra-padding i{
-	color:#009688;
-	font-size:16px;
-	margin:0 15px 5px 0;
-}
-.container{
-	position:relative;
 
+.aside {
+  flex: 32%;
+  margin: 15px 8px 15px 0;
+  background-color: white;
+  box-shadow:
+    0 4px 8px 2px rgba(0, 0, 0, 0.2),
+    0 6px 20px 5px rgba(0, 0, 0, 0.19);
 }
-.textinside{
-	position:absolute;
-	color:white;
-	width:100%;
-	top:270px;
-	left:17px;
+.aside img {
+  max-width: 100%;
+  max-height: 100%;
 }
-@media only screen and (max-width: 900px){
-	.content{
-		margin:0;
-	}
-	.row{
-		flex-direction:column;
-	}
-	.main{
-		flex:100%;
-		margin:10px 20px;
-		
-	}
-	.aside{
-		flex:100%;
-		margin:10px 20px;
-	}
-	.textinside{
-		top:220px;
-	}
+.aside a {
+  text-decoration: none;
+  color: inherit;
 }
-@media only screen and (max-width: 400px){
-	.textinside{
-		top:190px;
-	}
+.extra-padding {
+  padding: 5px 20px;
+  background-color: white;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 4px 20px 5px rgba(0, 0, 0, 0.19);
 }
-@media only screen and (max-width: 320px){
-	.textinside{
-		top:160px;
-		font-size:20px;
-	}
+.extra-padding i {
+  color: #009688;
+  font-size: 16px;
+  margin: 0 15px 5px 0;
 }
-.progress{
-	width:100%;
-	background-color:lightgrey;
-	border-radius:20px;
-	margin:18px 0;
+.container {
+  position: relative;
 }
-.progress .percent{
-	width:60%;
-	height:15px;
-	text-align:center;
-	font-size:14px;
-	color:white;
-	background-color:#009688;
-	border:1px transparent;
-	border-radius:20px;
+.textinside {
+  position: absolute;
+  color: white;
+  width: 100%;
+  top: 270px;
+  left: 17px;
 }
-.progress .langpercent{
-	width:60%;
-	height:25px;
-	text-align:center;
-	font-size:14px;
-	color:white;
-	background-color:#009688;
-	border:1px transparent;
-	border-radius:20px;
+@media only screen and (max-width: 600px) {
+  .content {
+    margin: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .main {
+    flex: 100%;
+    margin: 10px 20px;
+  }
+  .aside {
+    flex: 100%;
+    margin: 10px 20px;
+  }
+  .textinside {
+    top: 220px;
+  }
 }
-.head{
-	margin:26px 0;
+@media only screen and (max-width: 400px) {
+  .textinside {
+    top: 190px;
+  }
 }
-.head i{
-	font-size:36px;
+@media only screen and (max-width: 320px) {
+  .textinside {
+    top: 160px;
+    font-size: 20px;
+  }
 }
-.head h2{
-	font-size:30px;
-	font-weight:400;
+.progress {
+  width: 100%;
+  background-color: lightgrey;
+  border-radius: 20px;
+  margin: 18px 0;
 }
-@media only screen and (max-width: 400px){
-	.head h2{
-		font-size:24px;
-		margin:0;
-	}
+.progress .percent {
+  width: 60%;
+  height: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: #009688;
+  border: 1px transparent;
+  border-radius: 20px;
 }
-.main-padding{
-	padding:0 13px;
+.progress .langpercent {
+  width: 60%;
+  height: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background-color: #009688;
+  border: 1px transparent;
+  border-radius: 20px;
 }
-span{
-	color:white;
-	background-color:#009688;
-	padding:2px 5px;
-	border-radius:5px;
+.head {
+  margin: 26px 0;
 }
-.main-padding p{
-	opacity:0.9;
+.head i {
+  font-size: 36px;
 }
-.main-padding hr{
-	border:0;
-	border-top:1px solid #eee;
-	margin:25px 0;
-	}
-footer{
-	display:flex;
-	flex-direction:row;
-	margin:0;
-	background-color:#009688;
-	text-align:center;
+.head h2 {
+  font-size: 30px;
+  font-weight: 400;
 }
-footer div{
-	width:100%;
-	padding:10px;
-	margin:auto;
-	color:white;
-	font-size:16px;
+@media only screen and (max-width: 400px) {
+  .head h2 {
+    font-size: 24px;
+    margin: 0;
+  }
 }
-footer a{
-	text-decoration:none;
+.main-padding {
+  padding: 0 13px;
 }
-footer i{
-	font-size:16px;
+span {
+  color: white;
+  background-color: #009688;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
-footer i:hover{
-	opacity:0.30;
+.main-padding p {
+  opacity: 0.9;
 }
-footer .iconspace{
-	width:15px;
-	margin-left:0;
+.main-padding hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 25px 0;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background-color: #009688;
+  text-align: center;
+}
+footer div {
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  color: white;
+  font-size: 16px;
+}
+footer a {
+  text-decoration: none;
+}
+footer i {
+  font-size: 16px;
+}
+footer i:hover {
+  opacity: 0.3;
+}
+footer .iconspace {
+  width: 15px;
+  margin-left: 0;
 }
